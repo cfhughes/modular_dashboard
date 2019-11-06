@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style type="text/css">
+	h4{
+		color:black;
+	}
+</style>
+<body>
+<h1>Welcome to the Packers</h1>
+<% for (var x of all_animals) { %>
+    <a href="/animals/<%= x._id %>"><%= x.name %> Pack</a>    
+    <h4>Color: <%= x.color %></h4>
+    <h4>Pack Size: <%= x.pack_size %></h4><br>
+<% } %>
+<form action='/animals/new' method='get'>
+	<input type="submit" value="Create a New Pack">
+</form>
+</body>
+</html>

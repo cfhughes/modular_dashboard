@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1><%= animal.name %> Pack</h1>
+<h2>We are the color <%= animal.color %>.</h2>
+<h2>We have <%= animal.pack_size %> members in the pack.</h2>
+<a href="/animals/edit/<%= animal._id %>">Edit Pack</a>
+<a href="/animals/destroy/<%= animal._id %>">Delete Pack</a>
+<a href="/">Show all Packs</a>
+</body>
+</html>
